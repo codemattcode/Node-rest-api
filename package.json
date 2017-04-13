@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "*",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start" : "node server.js",
+    "dev" : "nodemon server.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codemattcode/node-rest-api.git"

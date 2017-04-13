@@ -1,15 +1,14 @@
 'use strict';
 
-const http = require('http');
+const express = require('express');
+const app = express();
+const bodyParser = require('bodyParser'); //req.body
+const cors = require('cors'); //allow req from external api's
 
 const hostname = 'localhost';
 const port = 5555;
 
-const server = http.createServer((req,res) =>{
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'application/json');
-  res.end(`The server is running : http://${hostname}:${port}`);
-});
+
 
 server.listen(port,hostname, ()=>{
   console.log(`Its time to start running....at http://${hostname}:${port}`);
