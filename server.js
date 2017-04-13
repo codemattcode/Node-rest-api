@@ -13,7 +13,7 @@ app.use(cors());
 
 app.get('/api/contacts', (req, res)=>{
   // res.send('Hello, World!');
-  res.json(contacts);
+  // res.json(contacts);
 });
 //http Verbs : GET, POST, PUT, DELETE, PATCH.  "Methods used to send requests to server".
 
