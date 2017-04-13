@@ -5,8 +5,8 @@ const port = 5555;
 
 const server = http.createServer((req,res) =>{
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  res.end('Hello from the server!<br>Its great to be with <b>you</b>');
+  res.setHeader('Content-Type', 'application/json');
+  res.end(`Hello from http://${hostname}:${port}`);
 });
 
 server.listen(port,hostname, ()=>{
