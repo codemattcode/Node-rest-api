@@ -45,12 +45,42 @@ res.json(contact)
 });
 
 //edit single contact
+app.put('/api/contacts/:id', (req,res)=> {
+  const requestId = req.params.id;
+
+  let contact = contacts.filter(contact =>{
+    return contact.id == requestId;
+  })[0];
+
+  const index = contacts.indexOf(contact);
+
+  const keys = Object.keys(req.body);
+
+  keys.forEach(key =>{
+    contact[key] = req.body[key]
+  });
+
+  contacts[index] = contact;
+
+  res.json(contacts[index]);
+});
 
 
+// delete single contact
+app.delete('/api/contacts/:id', (req,res)=> {
 
+  const requestId = req.params.id;
 
+  let contact = contacts.filter(contact =>{
+    return contact.id == requestId;
+  })[0];
 
+  const index = contacts.indexOf(contact);
 
+  contacts.splice(index, 1);
+
+  res.json({mesage: `User ${requestId} deleted.`})
+});
 //http Verbs : GET(view), POST(add), PUT(edit), DELETE(remove), PATCH.  "Methods used to send requests to server".
 
 
