@@ -8,7 +8,7 @@ const port = 5555;
 const server = http.createServer((req,res) =>{
   res.statusCode = 200;
   res.setHeader('Content-Type', 'application/json');
-  res.end(`Hello from http://${hostname}:${port}`);
+  res.end(`The server is running : http://${hostname}:${port}`);
 });
 
 server.listen(port,hostname, ()=>{
