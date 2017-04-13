@@ -1,0 +1,19 @@
+{
+  "name": "node-rest-api",
+  "version": "1.0.0",
+  "description": "*",
+  "main": "index.js",
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemattcode/node-rest-api.git"
+  },
+  "author": "codeMattCode",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codemattcode/node-rest-api/issues"
+  },
+  "homepage": "http://codemattcode.com
+}
