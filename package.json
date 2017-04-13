@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "*",
   "main": "index.js",
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/codemattcode/node-rest-api.git"
@@ -15,5 +13,10 @@
   "bugs": {
     "url": "https://github.com/codemattcode/node-rest-api/issues"
   },
-  "homepage": "http://codemattcode.com"
+  "homepage": "http://codemattcode.com",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.3",
+    "express": "^4.15.2"
+  }
 }
